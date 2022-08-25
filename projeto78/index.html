@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="uptade">proximo</button>
+    <img src="8deede6888af1f1be092c160e76a77f0.jpg" style="width: 30%;" id="familymemberimg">
+    <h4 id="familymembername">Joaozinho do grau pato donald</h4>
+ <script>
+     var imagens=
+     [
+     "https://i.pinimg.com/564x/f2/de/f3/f2def3d2d5f9a2fd3ac0d45f4d612b64.jpg" , 
+     "https://i.pinimg.com/564x/e5/80/22/e5802233848cd7079f99f3a537c33194.jpg" , 
+     "https://i.pinimg.com/564x/8d/ee/de/8deede6888af1f1be092c160e76a77f0.jpg"
+     ];
+     var name=
+     ["joaozinho do grau pato donald" , 
+     "clementina do grau pato donald" , 
+     "creuza jurema de oliveira jurassic silva t-rex abobora-fritada -cozida-amassada-com-aveia-e-mel do grau pato donald"];
+
+     var i=0;
+     var number0fFamilyMemberInArray = 2;
+     function uptade()
+     {
+         i++;
+         if (i > number0fFamilyMemberInArray)
+         {
+             i=0;
+         }
+
+         var updateimage= imagens[i];
+         var updatename= name[i];
+         document.getElementById("familymemberimg").src = updateimage;
+         document.getElementById("familymembername").innerHTML = updatename;
+     }
+ </script>
+</body>
+</html>
